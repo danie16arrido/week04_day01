@@ -6,7 +6,7 @@ class RockPaperScissors
   end
 
   def get_winner()
-    outcomes = ["draw", "loose", "win"]
+    outcomes = ["draw", "lose", "win"]
     case @player1
       when "rock"
         check_player2(outcomes)
@@ -35,7 +35,7 @@ class RockPaperScissors
   def get_winner_pretty()
     result = get_winner()
     case result
-    when "loose"
+    when "lose"
       return "Player2's #{@player2} wins" #[@player2, "player2"]
     when "win"
       return "Player1's #{@player1} wins"

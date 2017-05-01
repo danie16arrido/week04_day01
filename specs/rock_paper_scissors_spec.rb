@@ -10,7 +10,7 @@ class TestRockPaperScissors < Minitest::Test
 
   def test_rock_paper()
     game = RockPaperScissors.new(@rock, @paper)
-    assert_equal("loose", game.get_winner)
+    assert_equal("lose", game.get_winner)
   end
 
   def test_scissors_paper()
